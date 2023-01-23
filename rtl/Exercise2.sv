@@ -12,5 +12,7 @@ module Exercise2 (
     input [15:0] init,
     output logic [15:0] out
 );
-
+  always_ff @(posedge clk)
+    if (!nReset) out <= init;
+    else out <= {out[14:0], out[15] ^ out[13] ^ out[12] ^ out[10]};
 endmodule

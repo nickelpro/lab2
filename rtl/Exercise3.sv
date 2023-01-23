@@ -1,3 +1,14 @@
+/**
+  @brief A module of mysterious purpose
+
+  @input clk    clock
+  @input nReset active-low reset
+  @input a      an input
+  @input b      an input
+  @input c      an input
+
+  @output out   output
+*/
 module Exercise3 (
     input clk,
     input nReset,
